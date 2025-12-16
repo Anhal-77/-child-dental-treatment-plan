@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>خطة علاج أسنان الطفل</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>خطة علاج طفلي 🦷</h1>
+        </header>
+
+        <section class="dental-chart">
+            <div id="upper-jaw" class="jaw">
+                <div class="tooth red" onclick="showDetails(54)">54</div>
+                <div class="tooth gray" onclick="showDetails(55)">55</div>
+            </div>
+            
+            <div id="lower-jaw" class="jaw">
+                <div class="tooth blue" onclick="showDetails(85)">85</div>
+            </div>
+        </section>
+
+        <section class="treatment-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>السن</th>
+                        <th>التشخيص</th>
+                        <th>الحالة</th>
+                    </tr>
+                </thead>
+                <tbody id="treatment-data">
+                    </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
