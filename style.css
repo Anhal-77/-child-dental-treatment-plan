@@ -1,0 +1,121 @@
+/* إعدادات الخط والألوان العامة */
+:root {
+    --main-blue: #0095ff;
+    --bg-light: #f4f7fa;
+    --text-dark: #333;
+    --red-status: #ff4d4d;
+    --yellow-status: #ffd11a;
+    --blue-status: #4d94ff;
+    --gray-done: #e0e0e0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* حاوية التطبيق تشبه شاشة الجوال */
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    padding: 20px;
+}
+
+header h1 {
+    color: var(--text-dark);
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* تصميم مخطط الأسنان */
+.dental-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.jaw {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* شكل السن المفرد */
+.tooth {
+    width: 45px;
+    height: 55px;
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 10px 10px 18px 18px; /* شكل منحني يشبه السن */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.tooth:hover { transform: scale(1.1); }
+
+/* الألوان بناءً على خطتك العلاجية */
+.red { background-color: var(--red-status); color: white; border-color: #d43f3f; }
+.blue { background-color: var(--blue-status); color: white; border-color: #3b7ddd; }
+.yellow { background-color: var(--yellow-status); color: #555; border-color: #e6bc00; }
+.gray { background-color: var(--gray-done); color: #888; border-color: #ccc; }
+
+/* تصميم الجدول الأسفل */
+.treatment-list {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th {
+    text-align: right;
+    padding: 12px;
+    border-bottom: 2px solid var(--bg-light);
+    color: #888;
+    font-size: 0.9rem;
+}
+
+td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+/* زر التوعية الأزرق الكبير */
+.atlas-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--main-blue);
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
