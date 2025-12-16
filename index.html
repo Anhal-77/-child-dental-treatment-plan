@@ -2,57 +2,65 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>خطة علاج أسنان الطفل</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطة علاج طفلي</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    
-    <link rel="stylesheet" 
-        href="style.css">
-</head>
-
 <body>
     <div class="app-container">
         <header>
             <h1>خطة علاج طفلي 🦷</h1>
+            <p style="text-align: center; color: #666;">التزام الأهل: 7 من 8 أسابيع</p>
         </header>
 
-        <section class="dental-chart">
-            <div id="upper-jaw" class="jaw">
-                <div class="tooth red" onclick="showDetails(54)">54</div>
-                <div class="tooth gray" onclick="showDetails(55)">55</div>
+        <div class="dental-chart">
+            <div class="jaw">
+                <div class="tooth red" onclick="showDetails(54, 'RED', 'PULP')">54</div>
+                <div class="tooth gray" onclick="showDetails(55, 'GRAY', 'NONE')">55</div>
+                <div class="tooth" onclick="showDetails(51, 'NONE', 'NONE')">51</div>
+                <div class="tooth blue" onclick="showDetails(65, 'BLUE', 'SEALANTS')">65</div>
             </div>
             
-            <div id="lower-jaw" class="jaw">
-                <div class="tooth blue" onclick="showDetails(85)">85</div>
+            
+
+            <div class="jaw">
+                <div class="tooth yellow" onclick="showDetails(74, 'YELLOW', 'FILLINGS')">74</div>
+                <div class="tooth green" onclick="showDetails(85, 'GREEN', 'FLUORIDE')">85</div>
+                <div class="tooth" onclick="showDetails(81, 'NONE', 'NONE')">81</div>
             </div>
-        </section>
+        </div>
 
         <section class="treatment-list">
-    <table>
-        <thead>
-            <tr>
-                <th>السن (FDI)</th>
-                <th>الأولوية</th>
-                <th>الجلسات</th>
-                <th>الحالة</th>
-            </tr>
-        </thead>
-        <tbody id="treatment-data">
-            <tr>
-                <td>54</td>
-                <td style="color: red;">عاجلة (علاج عصب)</td>
-                <td>2</td>
-                <td>⏳ قيد التنفيذ</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
+            <h3>قائمة الحالات النشطة:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>FDI</th>
+                        <th>الأولوية</th>
+                        <th>الجلسات</th>
+                        <th>الحالة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>54</td>
+                        <td style="color: red;">عاجلة</td>
+                        <td>2</td>
+                        <td>⏳ قيد التنفيذ</td>
+                    </tr>
+                    <tr>
+                        <td>85</td>
+                        <td style="color: green;">وقائية</td>
+                        <td>1</td>
+                        <td>✅ مكتمل</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
+        <a href="#" class="atlas-btn">أطلس علاج الأسنان (شرح تفاعلي)</a>
     </div>
-    <script src="script.js"></script>
-</body>
-    <script src="script.js"></script>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
-
